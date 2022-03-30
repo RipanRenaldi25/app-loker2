@@ -14,12 +14,7 @@ class Mahasiswa{
 		$this->conn = mysqli_connect($server,$nama,$pw,$db);
 	}
 
-	public function getMahasiswa(){
-		
-		$query = "SELECT * FROM mahasiswa2";
-		$result = $this->conn->query($query);
-		return $result;
-	}
+	
 	public function getKelas(){
 		$query = "SELECT * FROM kelas";
 		return $this->conn->query($query);
